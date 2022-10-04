@@ -16,7 +16,10 @@ setup(
     license="Apache 2",
     keywords="gcp google cloud platform",
     url="",
-    packages=['oauth2client', 'google-api-python-client', 'tqdm'],
+    install_requires=[
+        'oauth2client', 'google-api-python-client', 'tqdm'
+    ],
+    packages=['src', 'tests'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 1 - Beta",
